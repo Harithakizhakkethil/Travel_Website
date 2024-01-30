@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+<!-- header section -->
+<header class="header">    
+    <div class="bx bx-menu" id="menu-icon"></div>
+      
+    <nav>
+        <label class="logo">Travelsphere  <i class="fa-solid fa-globe"></i></label>
+        <ul>
+            <li><a href="http://127.0.0.1:5501/index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#guide">Guides</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#footer">Contact</a></li> 
+        </ul>
+      </nav>
+</header> 
+
+
+   <!-- booking section -->
+   <div class="container booking">
+    <section class="flex">
+        <form action="" method="post">
+            <h2>Book your Tour</h2>
+            <input type="text" name="name" required maxlength="50" placeholder="Your Name" class="boxb" >
+            <input type="number" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Phone Number" class="boxb">
+            <!-- <input id="mail" type="email" placeholder="Enter email Id" class="box">  -->           
+            <input type="text" name="Location" required  min="1" max="10" placeholder="Enter your tour location" class="boxb">
+            <input type="date" name="date" required class="boxb">
+            <input type="number" name="guests" min="1" max="10" maxlength="2" placeholder="Number of guests" required class="boxb">
+            <input type="submit" value=" Book Now" name="Search" class="btn">
+        </form>     
+    </section>
+   </div>
